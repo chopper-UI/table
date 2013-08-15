@@ -1,0 +1,20 @@
+{
+  "name": "table",
+  "description": "table",
+  "version": "1.0.0",
+  "homepage": "https://github.com/chopper-UI/table",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chopper-UI/table.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chopper-UI/table/issues"
+  },
+  "family": "chopper",
+  "spm": {
+    "alias": {},
+    "output": [
+      "table.css"
+    ]
+  }
+}
