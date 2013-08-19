@@ -2,6 +2,7 @@
 
 .ui-table{
     border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     display: inline-block;
 }
 
@@ -14,8 +15,8 @@
 
 .ui-table:after,
 .ui-table-column:after,
-.ui-table-topitem .top:after,
-.ui-table-topitem .middle:after{
+.ui-table-topitem .ui-table-top:after,
+.ui-table-topitem .ui-table-middle:after{
     content: '\0020';
     display: block;
     visibility: hidden;
@@ -23,27 +24,24 @@
     clear: both;
 }
 
-.ui-table-side{
-    border-left: 1px solid #ccc;
-}
-
 .ui-table-column{
     border-bottom: 1px solid #ccc;
 }
-.ui-table-topitem{
-    height: 100%;
-}
-.ui-table-head .ui-table-topitem .top{
+
+.ui-table-head .ui-table-topitem .ui-table-top{
     height: 50%;
 }
-.ui-table-head .ui-table-topitem .middle{
+.ui-table-head .ui-table-topitem .ui-table-middle{
     height: 50%;
 }
-.ui-table-head .ui-table-topitem .top .ui-table-item{
+.ui-table-head .ui-table-topitem .ui-table-top .ui-table-item{
     width: 100%;
     border-bottom: 1px solid #ccc;
 }
 
+.ui-table-topitem{
+    height: 100%;
+}
 .ui-table-item{
     border-right: 1px solid #ccc;
     width: 100px;
