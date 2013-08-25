@@ -2,9 +2,8 @@
 /* chopper.table 样式模块 */
 
 .ui-table{
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
     display: inline-block;
+    overflow-x: auto;
 }
 
 .ui-table-side,
@@ -25,40 +24,42 @@
     clear: both;
 }
 
-.ui-table-column{
-    border-bottom: 1px solid #ccc;
+.ui-table-side{
+    
+}
+.ui-table-main{
+    
 }
 
-.ui-table-head .ui-table-topitem .ui-table-top{
-    height: 50%;
+.ui-table-column .ui-table-item:first-child{
+    border-left: 1px solid #ccc;
 }
-.ui-table-head .ui-table-topitem .ui-table-middle{
-    height: 50%;
+.ui-table-column .ui-table-side .ui-table-item:last-child{
+    border-right: 0 none;
 }
-.ui-table-head .ui-table-topitem .ui-table-top .ui-table-item{
-    width: 100%;
-    border-bottom: 1px solid #ccc;
+.ui-table-head .ui-table-item{
+    border-top: 1px solid #ccc;
 }
 
-.ui-table-topitem{
-    height: 100%;
-}
 .ui-table-item{
     border-right: 1px solid #ccc;
-    width: 100px;
-    display: table;
-    height: 100%;
-    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 5px;
+    display: table;
 }
-.ui-table-cont{
+.ui-table-item-main{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-.ui-table-cont > *{
+.ui-table-item-box{
+    width: 100px;
+}
+.ui-table-item-center{
     display: inline-block;
     text-align: left;
+    max-width: 100%;
 }
